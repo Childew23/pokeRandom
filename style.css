@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* DIV QUI VA CONTENIR LES INFOS DU POKEMON */
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  width: 60%;
+  max-width: 500px;
+}
+
+#img-wrapper {
+  width: 150px;
+}
+
+/* Sprite du pokémon */
+#image {
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  font-size: 3vh;
+  width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#number {
+  margin-right: 15px;
+}
+
+#name {
+  text-transform: capitalize;
+}
+
+/* Bouton pour changer de pokémon */
+#button {
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#button:hover {
+  transform: translateY(-2px);
+}
+
+#button:active {
+  transform: translateY(2px);
+}
+
+/* Div qui contient les types du pokémon */
+#type-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  width: 100%;
+  padding: 20px;
+}
+/* image du type */
+#type-wrapper img {
+  width: 45px;
+}
